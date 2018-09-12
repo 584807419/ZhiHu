@@ -5,8 +5,8 @@
 
 
 /ZhiHu # python manage.py shell  
->>> from app import create_app, db  
->>> db.create_all()  
+from app import create_app, db
+db.create_all()
 python manage.py runserver --host 0.0.0.0 --port 80  
 
 ![image](https://github.com/584807419/ZhiHu/blob/dev/images/index.png)
