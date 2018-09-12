@@ -1,3 +1,4 @@
+#coding:utf-8
 #!/usr/bin/env python
 import os
 from app import create_app, db
