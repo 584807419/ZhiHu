@@ -1,3 +1,4 @@
+#coding:utf-8
 from flask import jsonify, request, g, abort, url_for, current_app
 from .. import db
 from ..models import Post, Permission
