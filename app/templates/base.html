@@ -20,8 +20,10 @@
 
 <div role="navigation" class="zu-top" data-za-module="TopNavBar">
 <div class="zg-wrap modal-shifting clearfix" id="zh-top-inner">
-<a href="/" class="zu-top-link-logo" id="zh-top-link-logo" data-za-c="view_home" data-za-a="visit_home" data-za-l="top_navigation_zhihu_logo">知乎</a>
 
+<li class="top-nav-noti zu-top-nav-li ">
+<a href="/" class="zu-top-nav-link" id="zh-top-link-logo" data-za-c="view_home" data-za-a="visit_home" data-za-l="top_navigation_zhihu_logo">知乎</a>
+</li>
 <div class="top-nav-profile dropdown">
 
 {% if current_user.is_authenticated %}
@@ -112,9 +114,7 @@ style="visibility:hidden" data-count="0">
 <a class="zu-top-nav-link" href="/explore">发现</a>
 </li>
 
-<li class="top-nav-noti zu-top-nav-li ">
-<a class="zu-top-nav-link" href="javascript:;" id="zh-top-nav-count-wrap" role="button"><span class="mobi-arrow"></span>消息</a>
-</li>
+
 
 </ul>
 <div class="zu-top-nav-live zu-noti7-popup zg-r5px no-hovercard" id="zh-top-nav-live-new" role="popup" tabindex="0">

@@ -6,9 +6,9 @@
 
 {% block page_content %}
 <div class="page-header">
-{% if current_user.can(Permission.WRITE_ARTICLES) %}
+{#{% if current_user.can(Permission.WRITE_ARTICLES) %}#}
 {{ wtf.quick_form(form) }}
-{% endif %}
+{#{% endif %}#}
 </div>
 
 <div>
