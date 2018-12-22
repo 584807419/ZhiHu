@@ -1,5 +1,4 @@
 #coding:utf-8
-#coding:utf-8
 from flask import Flask, render_template, Blueprint
 from config import config
 from flask_sqlalchemy import SQLAlchemy

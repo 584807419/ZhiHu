@@ -17,11 +17,11 @@
     </script>
 
 <h4 id="comments">写回答</h4>
-{% if current_user.can(Permission.COMMENT) %}
+{#{% if current_user.can(Permission.COMMENT) %}#}
 <div class="comment-form">
     {{ wtf.quick_form(form) }}
 </div>
-{% endif %}
+{#{% endif %}#}
 {% include '_answers.html' %}
 {% if pagination %}
 <div class="pagination">
