@@ -38,14 +38,14 @@
 <div class="index-main">
 <div class="index-main-body">
 <div class="index-header">
-<h1 class="logo">知乎</h1>
+<h1 class="logo hide-text">知乎</h1>
 <h2 class="subtitle">与世界分享你的知识、经验和见解</h2>
 </div>
 <div class="desk-front sign-flow sign-flow clearfix sign-flow-simple">
 <div class="index-tab-navs">
 <div class="navs-slider" data-active-index="0">
 <!--<a href="#signup" class="active">注册</a>-->
-{#<a href="#signin">登录</a>#}
+<a href="#signin">登录</a>
 </div>
 </div>
 
@@ -66,12 +66,9 @@
 </div>
 </form>
 
-
-{#{% if current_user.username %}#}
-{#{% for message in get_flashed_messages() %}#}
-{#<p class="agreement-tip">{{ message }}</p>#}
-{#{% endfor %}#}
-{#{% endif %}#}
+{% for message in get_flashed_messages() %}
+<p class="agreement-tip">{{ message }}</p>
+{% endfor %}
 <p class="agreement-tip">还没有账号? <a href="{{url_for('auth.register')}}"> 注册账号 </a></p>
 
 </div>
